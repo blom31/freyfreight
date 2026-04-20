@@ -1,0 +1,55 @@
+// Brand Colors
+$primary: #0062cd;
+$primary-container: #004b9f;
+$primary-fixed: #d8e2ff;
+$primary-fixed-dim: #acc7ff;
+$secondary: #ff8100;
+$tertiary: #4e4d4d;
+$error: #ba1a1a;
+
+// Surface & Background Colors
+$white: #ffffff;
+$black: #000000;
+$surface: #f9f9f9;
+$surface-container: #eeeeee;
+$surface-container-low: #f3f3f3;
+$surface-container-high: #e8e8e8;
+$surface-container-highest: #e2e2e2;
+$surface-container-lowest: #ffffff;
+$surface-dim: #dadada;
+$surface-variant: #e2e2e2;
+$surface-bright: #f9f9f9;
+$background: #f9f9f9;
+
+// On-Surface (Text) Colors
+$on-surface: #1a1c1c;
+$on-surface-variant: #424753;
+$on-primary: #ffffff;
+$on-secondary: #ffffff;
+$on-tertiary: #ffffff;
+$on-background: #1a1c1c;
+
+// Outline Colors
+$outline: #848472;
+$outline-variant: #c2d5c5;
+
+// Typography
+$font-headline: "Space Grotesk", sans-serif;
+$font-body: "Inter", sans-serif;
+$font-label: "Roboto", sans-serif;
+
+// Layout & Effects
+$radius-default: 0.125rem;
+$radius-lg: 0.25rem;
+$radius-xl: 0.5rem;
+$radius-full: 0.75rem;
+
+$transition-default: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-lg:
+  0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl:
+  0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-blue: 0 20px 40px rgba(0, 98, 205, 0.06);
