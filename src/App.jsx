@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { TopNavBar } from "./components/TopNavBar/TopNavbar";
+import { Hero } from "./components/Hero/Hero";
 
 export function App() {
   return (
@@ -9,14 +10,7 @@ export function App() {
 
         <main>
           <Routes>
-            <Route
-              path="/"
-              element={
-                <div>
-                  <h1>Bienvenido a Fey Freight</h1>
-                </div>
-              }
-            />
+            <Route path="/" element={<Hero />} />/
           </Routes>
         </main>
       </div>
