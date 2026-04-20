@@ -7,7 +7,6 @@ export function Logo() {
     <div>
       <div className="navbar__logo">
         <img src={logo} alt="Fey Freight Brand Identity" />
-        <span className="navbar__logo-text">FREYFREIGHT</span>
       </div>
     </div>
   );
