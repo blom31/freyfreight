@@ -1,0 +1,57 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.stats {
+  padding: 8rem 2rem;
+  background-color: $surface-container-low;
+  overflow: hidden;
+  position: relative;
+
+  &__container {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  &__item-number {
+    font-family: $font-headline;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+    &--primary {
+      color: $primary;
+    }
+    &--secondary {
+      color: $secondary;
+    }
+  }
+
+  &__item-label {
+    font-family: $font-label;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $on-surface-variant;
+    font-weight: 700;
+  }
+
+  &__testimonial {
+    flex: 1;
+    width: 100%;
+  }
+}
