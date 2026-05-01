@@ -3,6 +3,7 @@ import { TopNavBar } from "./components/TopNavBar/TopNavbar";
 import { Hero } from "./components/Hero/Hero";
 import { Features } from "./components/Features/Features";
 import { Stats } from "./components/Stats/Stats";
+import { Cta } from "./components/Cta/Cta";
 
 export function App() {
   return (
@@ -17,8 +18,12 @@ export function App() {
               element={
                 <>
                   <Hero />
+
                   <Features />
+
                   <Stats />
+
+                  <Cta />
                 </>
               }
             />
