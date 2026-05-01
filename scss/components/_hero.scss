@@ -3,7 +3,7 @@
 
 .hero {
   position: relative;
-  min-height: 921px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,7 @@
     right: -10%;
     width: 600px;
     height: 600px;
-    background-color: rgba($primary, 0.05);
+    background-color: rgba($primary, 0.25);
     border-radius: 9999px;
     filter: blur(120px);
   }
@@ -34,7 +34,7 @@
     left: -10%;
     width: 500px;
     height: 500px;
-    background-color: rgba($secondary, 0.05);
+    background-color: rgba($secondary, 0.25);
     border-radius: 9999px;
     filter: blur(100px);
   }
@@ -61,7 +61,7 @@
     }
 
     @include desktop {
-      font-size: 4.5rem;
+      font-size: 5.5rem;
     }
   }
 
