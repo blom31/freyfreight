@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { TopNavBar } from "./components/TopNavBar/TopNavbar";
 import { Hero } from "./components/Hero/Hero";
 import { Features } from "./components/Features/Features";
+import { Stats } from "./components/Stats/Stats";
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
                 <>
                   <Hero />
                   <Features />
+                  <Stats />
                 </>
               }
             />
