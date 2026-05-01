@@ -1,0 +1,59 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.feature-card {
+  @include glass-card;
+  padding: 2.5rem;
+  border-radius: $radius-xl;
+  border: 1px solid $white;
+  box-shadow: $shadow-sm;
+  @include transition-standard;
+
+  // For nesting hover effects
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: $shadow-xl;
+
+    .feature-card__icon-container {
+      background-color: $primary;
+      color: $white;
+    }
+
+    &--secondary:hover .feature-card__icon-container {
+      background-color: $secondary;
+    }
+  }
+
+  &__icon-container {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba($primary, 0.1);
+    border-radius: 9999px;
+    @include flex-center;
+    margin-bottom: 2rem;
+    color: $primary;
+    @include transition-standard;
+
+    .material-symbols-outlined {
+      font-size: 1.875rem;
+    }
+  }
+
+  &--secondary &__icon-container {
+    background-color: rgba($secondary, 0.1);
+    color: $secondary;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    color: $on-surface-variant;
+    line-height: 1.625;
+  }
+}
