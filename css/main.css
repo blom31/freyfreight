@@ -513,4 +513,85 @@ img {
   font-family: "Roboto", sans-serif;
 }
 
+.cta {
+  padding: 6rem 2rem;
+}
+.cta__card {
+  max-width: 80rem;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #0062cd 0%, #004b9f 100%);
+  border-radius: 1.5rem;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #ffffff;
+}
+.cta__overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background: radial-gradient(circle at center, #ffffff, transparent);
+}
+.cta__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .cta__title {
+    font-size: 3rem;
+  }
+}
+.cta__description {
+  font-size: 1.125rem;
+  opacity: 0.8;
+  margin-bottom: 3rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 10;
+}
+.cta__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .cta__buttons {
+    flex-direction: row;
+  }
+}
+.cta__btn-start {
+  background-color: #ff8100;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  box-shadow: 0 20px 25px -5px rgba(255, 129, 0, 0.2);
+}
+.cta__btn-start:hover {
+  transform: scale(1.05);
+}
+.cta__btn-rates {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem 2.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.cta__btn-rates:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 /*# sourceMappingURL=main.css.map */

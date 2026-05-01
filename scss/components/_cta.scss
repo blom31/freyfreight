@@ -1,0 +1,90 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.cta {
+  padding: 6rem 2rem;
+
+  &__card {
+    max-width: 80rem;
+    margin: 0 auto;
+    background: linear-gradient(135deg, $primary 0%, $primary-container 100%);
+    border-radius: 1.5rem;
+    padding: 4rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: $white;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    background: radial-gradient(circle at center, $white, transparent);
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10;
+
+    @include tablet {
+      font-size: 3rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 10;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__btn-start {
+    background-color: $secondary;
+    color: $white;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    box-shadow: 0 20px 25px -5px rgba($secondary, 0.2);
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__btn-rates {
+    background-color: rgba($white, 0.1);
+    backdrop-filter: blur(10px);
+    color: $white;
+    border: 1px solid rgba($white, 0.2);
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.125rem;
+
+    &:hover {
+      background-color: rgba($white, 0.2);
+    }
+  }
+}
