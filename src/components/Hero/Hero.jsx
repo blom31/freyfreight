@@ -1,3 +1,5 @@
+import TrackingSearch from "../TrackingSearch/TrackingSearch";
+
 export function Hero() {
   return (
     <section className="hero">
@@ -20,7 +22,7 @@ export function Hero() {
         </p>
 
         {/* Componente de búsqueda independiente */}
-        {/* <TrackingSearch /> */}
+        {<TrackingSearch />}
 
         <div className="hero__partners">
           <img
