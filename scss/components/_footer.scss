@@ -1,0 +1,60 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.footer {
+  width: 100%;
+  border-top: 1px solid rgba($outline-variant, 0.5);
+  background-color: $surface-container-low;
+
+  &__container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__logo {
+    img {
+      height: 3rem;
+      width: auto;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-family: $font-label;
+    font-size: 0.875rem;
+    letter-spacing: 0.025em;
+  }
+
+  &__link {
+    color: $on-surface-variant;
+
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    color: $on-surface-variant;
+    font-size: 0.875rem;
+    font-family: $font-label;
+    text-align: center;
+
+    @include tablet {
+      text-align: right;
+    }
+  }
+}

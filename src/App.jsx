@@ -4,6 +4,7 @@ import { Hero } from "./components/Hero/Hero";
 import { Features } from "./components/Features/Features";
 import { Stats } from "./components/Stats/Stats";
 import { Cta } from "./components/Cta/Cta";
+import { Footer } from "./components/Footer/Footer";
 
 export function App() {
   return (
@@ -24,6 +25,8 @@ export function App() {
                   <Stats />
 
                   <Cta />
+
+                  <Footer />
                 </>
               }
             />
