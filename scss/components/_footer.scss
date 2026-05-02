@@ -9,7 +9,7 @@
   &__container {
     max-width: 80rem;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 3rem 1.5rem; // Reduced for mobile
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,9 +30,13 @@
 
   &__links {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; // Allow links to wrap on small phones
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem; // Reduced gap for mobile
+
+    @include tablet {
+      gap: 2rem;
+    }
     font-family: $font-label;
     font-size: 0.875rem;
     letter-spacing: 0.025em;
@@ -48,10 +52,10 @@
   }
 
   &__copyright {
-    color: $on-surface-variant;
+    color: $outline;
     font-size: 0.875rem;
-    font-family: $font-label;
     text-align: center;
+    line-height: 1.5;
 
     @include tablet {
       text-align: right;

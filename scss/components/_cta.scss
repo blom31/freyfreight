@@ -2,15 +2,23 @@
 @import "../abstracts/mixins";
 
 .cta {
-  padding: 6rem 2rem;
+  padding: 4rem 1.5rem; // Reduced for mobile
+
+  @include tablet {
+    padding: 6rem 2rem;
+  }
 
   &__card {
     max-width: 80rem;
     margin: 0 auto;
     background: linear-gradient(135deg, $primary 0%, $primary-container 100%);
     border-radius: 1.5rem;
-    padding: 4rem;
+    padding: 2.5rem 1.5rem; // Reduced for mobile
     position: relative;
+
+    @include tablet {
+      padding: 4rem;
+    }
     overflow: hidden;
     text-align: center;
     color: $white;
@@ -24,11 +32,12 @@
   }
 
   &__title {
-    font-size: 2.5rem;
+    font-size: 2rem; // Smaller for mobile
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     position: relative;
     z-index: 10;
+    line-height: 1.2;
 
     @include tablet {
       font-size: 3rem;
