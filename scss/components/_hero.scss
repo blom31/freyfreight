@@ -3,12 +3,12 @@
 
 .hero {
   position: relative;
-  min-height: 700px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   overflow: hidden;
 
   &__blobs {
@@ -23,7 +23,7 @@
     right: -10%;
     width: 600px;
     height: 600px;
-    background-color: rgba($primary, 0.25);
+    background-color: rgba($primary, 0.05);
     border-radius: 9999px;
     filter: blur(120px);
   }
@@ -34,7 +34,7 @@
     left: -10%;
     width: 500px;
     height: 500px;
-    background-color: rgba($secondary, 0.25);
+    background-color: rgba($secondary, 0.05);
     border-radius: 9999px;
     filter: blur(100px);
   }
@@ -49,7 +49,7 @@
 
   &__title {
     font-family: $font-headline;
-    font-size: 3.75rem;
+    font-size: 2.5rem; // Adjusted for smaller phones
     font-weight: 700;
     color: $on-surface;
     line-height: 1.1;
@@ -57,11 +57,11 @@
     letter-spacing: -0.025em;
 
     @include tablet {
-      font-size: 6rem;
+      font-size: 4rem; // Mid size for tablet
     }
 
     @include desktop {
-      font-size: 5.5rem;
+      font-size: 8rem;
     }
   }
 
@@ -88,9 +88,15 @@
   &__partners {
     margin-top: 3rem;
     display: flex;
+    flex-wrap: wrap; // Allow partners to wrap on mobile
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 1.5rem; // Reduced gap for mobile
+
+    @include tablet {
+      gap: 3rem;
+    }
+
     opacity: 0.4;
     filter: grayscale(100%);
     transition: $transition-default;

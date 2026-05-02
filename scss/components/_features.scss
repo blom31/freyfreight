@@ -2,17 +2,27 @@
 @import "../abstracts/mixins";
 
 .features {
-  padding: 8rem 2rem;
+  padding: 4rem 1.5rem; // Reduced for mobile
   background-color: $surface-container-low;
+
+  @include tablet {
+    padding: 8rem 2rem;
+  }
 
   &__header {
     max-width: 80rem;
-    margin: 0 auto 5rem;
+    margin: 0 auto 3rem; // Reduced bottom margin for mobile
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
-    gap: 2rem;
+    align-items: flex-start; // Better alignment for mobile
+    gap: 1.5rem;
+
+    @include tablet {
+      margin-bottom: 5rem;
+      flex-direction: row;
+      align-items: flex-end;
+    }
 
     @include tablet {
       flex-direction: row;
@@ -24,9 +34,10 @@
   }
 
   &__title {
-    font-size: 2.5rem;
+    font-size: 2rem; // Smaller for mobile
     font-weight: 700;
     margin-bottom: 1.5rem;
+    line-height: 1.2;
 
     @include tablet {
       font-size: 3rem;
