@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 /**
- * TrackingSearch Component
+ * TrackingSearch Componente
  *
  * Este componente maneja la entrada del número de guía y dispara la búsqueda.
  * En el futuro, se conectará a un backend Express con Prisma y PostgreSQL.
