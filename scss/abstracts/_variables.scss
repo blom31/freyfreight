@@ -1,3 +1,5 @@
+// Kinetic Horizon Design Tokens - Migration from Tailwind
+
 // Brand Colors
 $primary: #0062cd;
 $primary-container: #004b9f;
@@ -28,6 +30,16 @@ $on-primary: #ffffff;
 $on-secondary: #ffffff;
 $on-tertiary: #ffffff;
 $on-background: #1a1c1c;
+
+// Status Colors
+$status-info: #1d4ed8;
+$status-info-bg: #dbeafe;
+$status-success: #065f46;
+$status-success-bg: #d1fae5;
+$status-warning: #92400e;
+$status-warning-bg: #fef3c7;
+$status-error: $error;
+$status-error-bg: #fee2e2;
 
 // Outline Colors
 $outline: #848472;
