@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { PublicLayout } from "./layouts/PublicLayout/PublicLayout";
+import { AdminLayout } from "./layouts/AdminLayout/AdminLayout";
 import { Hero } from "./components/Hero/Hero";
 import { Features } from "./components/Features/Features";
 import { Stats } from "./components/Stats/Stats";
@@ -23,6 +24,13 @@ export function App() {
                     <Cta />
                   </>
                 }
+              />
+            </Route>
+            {/* Rutas de Administración (usan AdminLayout) */}
+            <Route path="/admin" element={<AdminLayout />}>
+              <Route
+                index
+                element={<h2>Dashboard Administrativo (Próximamente)</h2>}
               />
             </Route>
           </Routes>
