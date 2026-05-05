@@ -1,35 +1,30 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { TopNavBar } from "./components/TopNavBar/TopNavbar";
+import { PublicLayout } from "./layouts/PublicLayout/PublicLayout";
 import { Hero } from "./components/Hero/Hero";
 import { Features } from "./components/Features/Features";
 import { Stats } from "./components/Stats/Stats";
 import { Cta } from "./components/Cta/Cta";
-import { Footer } from "./components/Footer/Footer";
 
 export function App() {
   return (
     <Router>
       <div className="app-container">
-        <TopNavBar />
-
         <main>
           <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero />
-
-                  <Features />
-
-                  <Stats />
-
-                  <Cta />
-
-                  <Footer />
-                </>
-              }
-            />
+            {/* Rutas Públicas (usan PublicLayout) */}
+            <Route path="/" element={<PublicLayout />}>
+              <Route
+                index
+                element={
+                  <>
+                    <Hero />
+                    <Features />
+                    <Stats />
+                    <Cta />
+                  </>
+                }
+              />
+            </Route>
           </Routes>
         </main>
       </div>
